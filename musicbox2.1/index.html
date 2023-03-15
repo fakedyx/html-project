@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+<embed src="image/01.mp3" hidden="true"
+                         autostart="true" loop="true"/>
+  <meta charset="utf-8" />
+  <title>css-3d旋转</title>
+  <link rel="stylesheet" href="index.css" />
+
+ </head>
+
+ <body>
+  <div class="wrap">
+   <div class="cube">
+    
+    <div class="out_front">
+  <img src="image/01.jpg" class="pic">
+    </div>
+    
+    <div class="out_back">
+     <img src="image/02.jpg" class="pic">
+    </div>
+   
+    <div class="out_left">
+    <img src="image/03.jpg" class="pic">
+    </div>
+
+    <div class="out_right">
+     <img src="image/04.jpg" class="pic">
+    </div>
+
+    <div class="out_top">
+    <img src="image/05.jpg" class="pic">
+    </div>
+
+    <div class="out_bottom">
+   <img src="image/06.jpg" class="pic">
+    </div>
+
+    
+    <span class="in_front">
+    <img src="image/07.jpg" class="in_pic" >
+   </span>
+    <span class="in_back">
+      <img src="image/08.jpg" class="in_pic" >
+   </span>
+    <span class="in_left">
+    <img src="image/09.jpg" class="in_pic" >
+   </span>
+    <span class="in_right">
+    <img src="image/10.jpg" class="in_pic" >
+   </span>
+    <span class="in_top">
+    <img src="image/11.jpg" class="in_pic" >
+   </span>
+    <span class="in_bottom">
+    <img src="image/12.jpg" class="in_pic" >
+ 
+   </div>
+  </div>
+ 
+ </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html ondragstart="return false"><!--不可拖拽-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="3D相册">
+    <meta name="description" content="旋转相册">
+    <title>旋转相册制作</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: #000000;
+            overflow: hidden;
+        }
+        #wrap{
+            width: 133px;
+            height: 200px;
+            margin: 200px auto;
+            position: relative;
+            transform-style:preserve-3d;/*设置3d元素风格*/
+            transform: rotateX(-12deg);
+        }
+        #wrap img{
+              position: absolute;
+              border: 2px solid hotpink;
+              -webkit-box-reflect:below 5px -webkit-linear-gradient(top, rgba(0,0,0,0)30%, rgba(0,0,0,.5)100%);
+          }
+        #wrap p{
+            width: 1200px;
+            height: 1200px;
+            border-radius: 100%;
+            
+            position: absolute;
+            top: 112%;
+            left: 50%;
+            margin-left: -600px;
+            margin-top: -600px;
+            transform: rotateX(90deg);
+        }
+        #perspective{
+            perspective: 800px;/*场景景深800,仅对3D有效*/
+        }
+        /*平面到三维   景深*/
+    </style>
+</head>
+<body>
+<div id="perspective"></div>
+<div id="wrap">
+    <!--img[src="image/$.jpg"]*11-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>3D旋转</title>
+    <style type="text/css">
+        *{padding: 0;
+        margin: 0;}
+        body,html{height:100%;}
+        body{background-image: url("image/beijing.jpg");background-size: 100% 100%;}
+       #box{width: 280px;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+            animation: go 45s linear infinite;
+        
+        }
+        #box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(650px);}
+        #box img:nth-child(2){
+            transform: rotateY(36deg) translateZ(650px);}
+        #box img:nth-child(3){
+            transform: rotateY(72deg) translateZ(650px);}
+        #box img:nth-child(4){
+            transform: rotateY(108deg) translateZ(650px);}
+        #box img:nth-child(5){
+            transform: rotateY(144deg) translateZ(650px);}
+        #box img:nth-child(6){
+            transform: rotateY(180deg) translateZ(650px);}
+        #box img:nth-child(7){
+            transform: rotateY(216deg) translateZ(650px);}
+        #box img:nth-child(8){
+            transform: rotateY(252deg) translateZ(650px);}
+        #box img:nth-child(9){
+            transform: rotateY(288deg) translateZ(650px);}
+        #box img:nth-child(10){
+            transform: rotateY(324deg) translateZ(650px);}
+		@keyframes go {
+		    0%{transform: rotateX(0deg) rotateY(0deg);}
+		    25%{transform: rotateX(20deg) rotateY(180deg);}
+		    50%{transform: rotateX(0deg) rotateY(360deg);}
+		    75%{transform: rotateX(-20deg) rotateY(540deg);}
+		    100%{transform: rotateX(0deg) rotateY(720deg);}
+		
+		}
+    </style>
+</head>
+	<body>
+		<div id="box">
+		  <img hight="100;" width="150" src="image/01.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/23.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/24.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/25.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/26.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/27.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/28.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/29.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/30.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/31.jpg" alt=""><p></p>  
+<img hight="100;" width="150" src="image/32.jpg" alt=""><p></p>  
+
+		</div>
+<script type="text/javascript">
+            var oImg=document.getElementsByTagName("img");//获取元素集合
+            var deg =360/oImg.length;//每两张图片间的角度
+            //遍历
+            window.onload=function () {
+                //页面加载完执行的函数
+                for(var i=0;i<oImg.length;i++){
+                    oImg[i].style.transform="rotateY("+i*deg+"deg) translateZ(350px)";
+            oImg[i].style.transition="1s "+(oImg.length-i)*0.1+"s";
+        }
+    }
+   
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

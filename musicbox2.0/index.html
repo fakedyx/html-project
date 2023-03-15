@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+<embed src="image/01.mp3" hidden="true"
+                         autostart="true" loop="true"/>
+  <meta charset="utf-8" />
+  <title>css-3d旋转</title>
+  <link rel="stylesheet" href="index.css" />
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>3D旋转</title>
+    <style type="text/css">
+        *{padding: 0;
+        margin: 0;}
+        body,html{height:100%;}
+        body{background-image: url("image/beijing.jpg");background-size: 100% 100%;}
+        #box{width: 280px;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+            animation: go 45s linear infinite;
+           }
+        #box img{width: 280px;
+                 height: 400px;
+                 position: absolute;
+                 left: 0;
+                 top: 0;
+        }
+        #box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(650px);}
+        #box img:nth-child(2){
+            transform: rotateY(36deg) translateZ(650px);}
+        #box img:nth-child(3){
+            transform: rotateY(72deg) translateZ(650px);}
+        #box img:nth-child(4){
+            transform: rotateY(108deg) translateZ(650px);}
+        #box img:nth-child(5){
+            transform: rotateY(144deg) translateZ(650px);}
+        #box img:nth-child(6){
+            transform: rotateY(180deg) translateZ(650px);}
+        #box img:nth-child(7){
+            transform: rotateY(216deg) translateZ(650px);}
+        #box img:nth-child(8){
+            transform: rotateY(252deg) translateZ(650px);}
+        #box img:nth-child(9){
+            transform: rotateY(288deg) translateZ(650px);}
+        #box img:nth-child(10){
+            transform: rotateY(324deg) translateZ(650px);}
+		@keyframes go {
+		    0%{transform: rotateX(0deg) rotateY(0deg);}
+		    25%{transform: rotateX(20deg) rotateY(180deg);}
+		    50%{transform: rotateX(0deg) rotateY(360deg);}
+		    75%{transform: rotateX(-20deg) rotateY(540deg);}
+		    100%{transform: rotateX(0deg) rotateY(720deg);}
+		
+		}
+    </style>
+</head>
+	<body>
+		<div id="box">
+		    <img src="image/13.jpg">
+		    <img src="image/14.jpg">
+		    <img src="image/15.jpg">
+		    <img src="image/16.jpg">
+		    <img src="image/17.jpg">
+		    <img src="image/18.jpg">
+		    <img src="image/19.jpg">
+		    <img src="image/20.jpg">
+		    <img src="image/21.jpg">
+		    <img src="image/22.jpg">
+		</div>
+	</body>
+</html>
+
+ </head>
+
+ <body>
+  <div class="wrap">
+   <div class="cube">
+    
+    <div class="out_front">
+  <img src="image/01.jpg" class="pic">
+    </div>
+    
+    <div class="out_back">
+     <img src="image/02.jpg" class="pic">
+    </div>
+   
+    <div class="out_left">
+    <img src="image/03.jpg" class="pic">
+    </div>
+
+    <div class="out_right">
+     <img src="image/04.jpg" class="pic">
+    </div>
+
+    <div class="out_top">
+    <img src="image/05.jpg" class="pic">
+    </div>
+
+    <div class="out_bottom">
+   <img src="image/06.jpg" class="pic">
+    </div>
+
+    
+    <span class="in_front">
+    <img src="image/07.jpg" class="in_pic" >
+   </span>
+    <span class="in_back">
+      <img src="image/08.jpg" class="in_pic" >
+   </span>
+    <span class="in_left">
+    <img src="image/09.jpg" class="in_pic" >
+   </span>
+    <span class="in_right">
+    <img src="image/10.jpg" class="in_pic" >
+   </span>
+    <span class="in_top">
+    <img src="image/11.jpg" class="in_pic" >
+   </span>
+    <span class="in_bottom">
+    <img src="image/12.jpg" class="in_pic" >
+ 
+   </div>
+  </div>
+ 
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
